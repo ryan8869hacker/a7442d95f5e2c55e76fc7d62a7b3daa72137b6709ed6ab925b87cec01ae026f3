@@ -1,0 +1,12 @@
+{
+  "name": "rate-limiter-5fc178",
+  "version": "1.0.0",
+  "description": "A rate-limiter utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["rate-limiter", "utility"],
+  "license": "MIT"
+}
